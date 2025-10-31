@@ -11,7 +11,7 @@ import AddEmployee from "./pages/AddEmployee.jsx";
 import EditEmployee from "./pages/EditEmployee.jsx";
 import EntryControl from "./pages/EntryControl.jsx";
 import Visitors from "./pages/Visitors.jsx";
-
+import AddVisitor from "./pages/AddVisitor.jsx";
 
 // Componente de rotas protegidas
 import PrivateRoute from "./components/PrivateRoute.jsx";
@@ -66,6 +66,14 @@ const router = createBrowserRouter([
     element: (
       <PrivateRoute>
         <Visitors />
+      </PrivateRoute>
+    ),
+  },
+  {
+    path: "/adicionarvisitante",
+    element: (
+      <PrivateRoute>
+        <AddVisitor />
       </PrivateRoute>
     ),
   },
